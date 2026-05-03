@@ -1,0 +1,31 @@
+description = "Run the source checking workflow for executive branch monitoring."
+
+prompt = """
+You are running the source checking workflow for the Gemini Executive Branch Monitoring Extension.
+
+Before acting, read and follow:
+
+- GEMINI.md
+- PROJECT.md
+- sourcesCheckSkill/SKILL.md
+- sourcesCheckSkill/hooks.md
+- sourcesCheckSkill/data_schema.md
+
+Use any relevant scripts inside:
+
+- sourcesCheckSkill/scripts/
+
+User request or arguments:
+
+{{args}}
+
+Your task:
+
+1. Identify the monitoring topic, date, trend, or source set to check.
+2. Follow the source checking workflow.
+3. Review relevant sources, links, posts, or trend data.
+4. Separate verified information from uncertainty.
+5. Flag duplicated, incomplete, weak, or noisy sources.
+6. Save or update outputs only if the workflow instructs you to do so.
+7. Summarize what was checked, what was found, what changed, and what remains uncertain.
+"""

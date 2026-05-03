@@ -1,0 +1,28 @@
+description = "Generate an executive branch monitoring report."
+
+prompt = """
+You are generating a monitoring report for the Gemini Executive Branch Monitoring Extension.
+
+Before acting, read and follow:
+
+- GEMINI.md
+- PROJECT.md
+- reportSkill/SKILL.md
+- reportSkill/hooks.md
+- reportSkill/report_guide.md
+
+Also review source checking outputs if the reporting workflow requires them.
+
+User request or arguments:
+
+{{args}}
+
+Your task:
+
+1. Identify the report topic, date, trend, or source set.
+2. Use the latest available source-checking data unless the user provides a specific date or topic.
+3. Follow the report structure and style defined in reportSkill/SKILL.md.
+4. Write the report in clear, descriptive monitoring language.
+5. Include a short methodology note.
+6. Clearly flag incomplete data, weak sources, unresolved questions, or uncertainty.
+"""

@@ -1,0 +1,6 @@
+{
+    "name": "gemini-executive-branch-monitoring",
+    "version": "0.1.0",
+    "description": "Gemini CLI extension for executive branch monitoring, source checking, and report generation.",
+    "contextFileName": "GEMINI.md"
+  }
